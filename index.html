@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML CSS Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="title">
+        <h1 id="title">HTML CSS Form</h1>
+        <p id="description">This is the second challenge of the FCC Web certificate</p>
+      </div>
+    <form action="" id="survey-form">
+      <!-- Basic inputs -->
+      <label for="name" id="name-label">Name</label> <br>
+      <input class='text' placeholder="Enter you name" type="text" id="name"> <br>
+      <label for="email" id="email-label">Email</label> <br>
+      <input class='text' placeholder="Enter you email" type="text" id="email"><br>
+      <label for="number" id="number-label">Age</label> <br>
+      <input class='text' placeholder="Enter your age #optionally" type="text" id="number"><br>
+      <!-- Basic inputs -->
+      <!-- dropdown -->
+      <label class="subtitle" for="tech" id="dropdown-label">I code in:</label> <br>
+      <select name="tech" id="dropdown">
+        <option value='Flutter'>Flutter</option>
+        <option value='Node - Express Js'>Node - Express Js</option>
+        <option value='Firebase - AWS'>Firebase - AWS</option>
+        <option value='ReactJs - JavaScript'>ReactJs - JavaScript</option>
+        <option value='HTML5'>HTML5</option>
+        <option value='CSS'>CSS</option>
+      </select>
+      <!-- dropdown -->
+      <!-- Radio buttons -->
+      <h2 class="subtitle" id="work">I can work as:</h2>
+      <fieldset name="work">
+        <input type="radio" id="front" name="frontEnd" value="Front End Developer"
+         checked>
+      <label for="front">Front End Developer</label> 
+         <br>
+         <input type="radio" id="back" name="backEnd" value="Back End Developer">
+      <label for="back">Back End Developer</label> 
+        
+    </fieldset>
+    <!-- Radio buttons -->
+    <!-- Checkboxes -->
+    <h2 class="subtitle" id="checkboxTitle">
+      What do you need?
+    </h2>
+    <div id="checkboxes">
+    <label><input type="checkbox" id="cbox1" value="Blog Page">Blog page</label><br>
+    <label><input type="checkbox" id="cbox1" value="Responsive App">Responsive App</label><br>
+    <label><input type="checkbox" id="cbox1" value="Android and IOs App">Android and IOs App</label><br>
+    </div>
+    <!-- Checkboxes -->
+    <!-- More detailes -->
+    <div id="textarea">
+      <h2 class="subtitle">Please tell me more details</h2>
+      <textarea id='textarea' class='text' type="textarea" rows='5' placeholder="Tell me more details!"></textarea>
+    </div>
+    <div id="submitButton">
+    <input type="button" value="Submit">
+    </div>
+    </form>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
